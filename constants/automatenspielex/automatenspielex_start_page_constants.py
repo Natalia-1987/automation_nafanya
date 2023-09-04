@@ -1,4 +1,4 @@
-class StartPageConstants:
+class ASStartPageConstants:
     url = "https://automatenspielex.com/"
 
     HEADING_H1_XPATH = ".//h1"

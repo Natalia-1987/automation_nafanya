@@ -1,4 +1,4 @@
-class StartPageConstants:
+class SLStartPageConstants:
     URL = "https://www.slotozilla.com/"
 
     GG_BET_GET_BONUS_XPATH = ".//div[@data-pid='ggbet-casino-wb-en']"

@@ -3,10 +3,10 @@ from time import sleep
 from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 
-from pages.base_page import BasePage
+from pages.slotozilla.base_page import SLBasePage
 
 
-class StartPage(BasePage):
+class StartPageSL(SLBasePage):
     def __init__(self):
         super().__init__()
 

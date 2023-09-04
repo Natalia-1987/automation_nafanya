@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options as ChromeOptions
 
 
-class BasePage:
+class SLBasePage:
     def __init__(self, headless=False):
         self.options = ChromeOptions()
         if headless == True:
