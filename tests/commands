@@ -1,0 +1,13 @@
+Запустити тести з термінала
+Запускати потрібно !!!з папки!!!, де лежить тест.
+Якщо ви знаходитесь не там, використайте команду cd шлях\до\папки
+
+python -m pytest test_webdriver_methods_for_slotozilla.py
+
+де test_webdriver_methods_for_slotozilla.py назва_файлу
+
+////////////////////////////////////////////////////////
+
+python -m pytest test_webdriver_methods_for_slotozilla.py --maxfail=2
+
+де test_webdriver_methods_for_slotozilla.py назва_файлу

@@ -26,6 +26,7 @@ def test_search(logger_fixture):
     log = logger_fixture
     log.info("test_search був запущений")
 
+
 def test_search_list():
     start_page.search_list(StartPageSLConstants.URL)
 
