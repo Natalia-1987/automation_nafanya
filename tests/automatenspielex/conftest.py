@@ -4,6 +4,8 @@ import pytest
 
 from selenium import webdriver
 
+from pages.automatenspielex.start_page_AS import StartPageAS
+
 
 @pytest.fixture
 def logger_fixture():
@@ -33,3 +35,26 @@ def logger_fixture():
 
     # Необхідно очистити логер після використання, щоб уникнути конфліктів
     log.handlers.clear()
+
+@pytest.fixture(scope="function")
+def driver_google():
+    # create driver
+    driver = webdriver.Chrome()
+    driver.implicitly_wait(10)
+    driver.maximize_window()
+    driver.get("https://www.google.com/")
+    return driver.current_url
+
+
+@pytest.fixture()
+def search_field(driver_google):
+    # create driver
+    driver = webdriver.Chrome()
+    driver.implicitly_wait(10)
+    driver.maximize_window()
+    driver.get("https://www.google.com/")
+    return driver.current_url
+
+@pytest.fixture()
+def main_page():
+    return StartPageAS()
