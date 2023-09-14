@@ -37,6 +37,9 @@ def logger_fixture():
     log.handlers.clear()
 
 
+'''Фікстура для повернення поточного урла гугл.ком'''
+
+
 @pytest.fixture(scope="function")
 def driver_google():
     # create driver
@@ -55,6 +58,7 @@ def search_field(driver_google):
     driver.maximize_window()
     driver.get("https://www.google.com/")
     return driver.current_url
+
 
 @pytest.fixture()
 def main_page():
