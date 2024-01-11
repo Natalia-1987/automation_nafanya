@@ -4,7 +4,6 @@ from selenium.webdriver.chrome.options import Options as ChromeOptions
 from selenium.webdriver.support.wait import WebDriverWait
 
 
-
 class ASBasePage:
     def __init__(self, headless=False):
         # відкриває сторінку браузера

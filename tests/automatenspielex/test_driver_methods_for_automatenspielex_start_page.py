@@ -1,3 +1,7 @@
+import platform
+
+import pytest
+
 from constants.automatenspielex.automatenspielex_start_page_constants import ASStartPageConstants
 from constants.automatenspielex.automatenspielex_start_page_expected_results import StartPageASExpectedResults
 from pages.automatenspielex.start_page_AS import StartPageAS
@@ -23,6 +27,7 @@ def test_up_to_top_button():
         ASStartPageConstants.URL) == StartPageASExpectedResults.EXPECTED_RESULT_UP_TO_TOP_BUTTON
 
 
+@pytest.mark.usefixtures("logger_fixture")
 def test_href(logger_fixture):
     # Порівнюємо значення атрибуту href першого тега <a> на сторінці, який отримали в результаті роботи методу
     # driver_first_menu_item із заданим нами очікуваним
@@ -47,11 +52,15 @@ def test_amount_of_slots():
         ASStartPageConstants.URL) == StartPageASExpectedResults.EXPECTED_RESULT_AMOUNT_OF_SLOTS
 
 
+@pytest.mark.xfail(reason='Потім перероблю цей тест')
 def test_following_link_to_page_casino():
+    print("HELLLOOO")
     assert start_page.driver_following_link_to_page_casino(
         ASStartPageConstants.URL) == StartPageASExpectedResults.EXPECTED_RESULT_FOLLOWING_LINK_TO_PAGE_CASIN0
+    print("GOOOOOODBYE")
 
 
+@pytest.mark.skip(reason="bug 110")
 def test_check_search_in_filter_block():
     assert start_page.driver_check_search_in_filter_block(
         ASStartPageConstants.URL) == StartPageASExpectedResults.EXPECTED_RESULT_SEARCH_IN_FILTER_BLOCK

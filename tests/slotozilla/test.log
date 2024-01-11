@@ -1,0 +1,8 @@
+2023-09-12 00:05:37,572 INFO Logs:  test_a_href був запущений (test_webdriver_methods_for_slotozilla.py:20)
+2023-09-12 10:14:12,346 INFO Logs:  test_search був запущений (test_webdriver_methods_for_slotozilla.py:27)
+2023-09-12 10:25:59,325 INFO Logs:  test_a_href був запущений (test_webdriver_methods_for_slotozilla.py:20)
+2023-09-12 13:24:38,980 INFO Logs:  test_fixture - ok (test_fixture.py:4)
+2023-09-12 17:56:01,987 INFO Logs:  test_a_href був запущений (test_webdriver_methods_for_slotozilla.py:20)
+2023-09-12 17:56:06,890 INFO Logs:  test_search був запущений (test_webdriver_methods_for_slotozilla.py:27)
+2023-09-12 17:59:44,119 INFO Logs:  test_a_href був запущений (test_webdriver_methods_for_slotozilla.py:20)
+2023-09-12 17:59:48,238 INFO Logs:  test_search був запущений (test_webdriver_methods_for_slotozilla.py:27)

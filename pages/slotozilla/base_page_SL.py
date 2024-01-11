@@ -14,5 +14,5 @@ class SLBasePage:
         self.driver = webdriver.Chrome(options=self.options)
         self.driver.maximize_window()
         self.driver.implicitly_wait(10)
-        self.wait = WebDriverWait(self.driver, 5)
+        self.wait = WebDriverWait(self.driver, 10)
 

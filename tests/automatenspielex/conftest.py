@@ -36,6 +36,7 @@ def logger_fixture():
     # Необхідно очистити логер після використання, щоб уникнути конфліктів
     log.handlers.clear()
 
+
 @pytest.fixture(scope="function")
 def driver_google():
     # create driver
@@ -54,6 +55,7 @@ def search_field(driver_google):
     driver.maximize_window()
     driver.get("https://www.google.com/")
     return driver.current_url
+
 
 @pytest.fixture()
 def main_page():

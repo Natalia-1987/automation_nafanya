@@ -1,0 +1,2 @@
+def web():
+    return None
